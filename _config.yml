@@ -1,4 +1,4 @@
-title: Launch A New Project
+title: Buy Motorola Smartphone | Shop4Moto
 tagline: Toolkit for launching your new project. Start by forking on github
 description: Make a launch site for your new webpage. Add an email list, HTTPS, free webhosting
 url: https://drewrwilson.com/launch-toolkit
@@ -16,4 +16,4 @@ twitter:
 facebook:
 instagram:
 
-forkMeOnGithub: true #se this false to remove fork me on github ribbon
+forkMeOnGithub: false #se this false to remove fork me on github ribbon
