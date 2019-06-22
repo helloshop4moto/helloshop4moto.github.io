@@ -1,0 +1,31 @@
+
+a, .product {
+font-weight: 500;
+}
+
+a:hover {
+background: #000;
+color: #69be28;
+transition: 0.5s ease;
+}
+
+.cat {
+color: #69be28;
+font-weight: 700;
+}
+
+section {
+display: flex;
+/*	align-items: center;*/
+justify-content: space-around;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+article {
+flex: 300px;
+}
+
+img {
+padding-left: 4rem;
+}
