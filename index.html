@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buy authentic motorcycle riding gears | shop4moto</title>
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Counterfeit motorcycle riding gears can hurt riders very, very seriously. Finding authentic gears on the Internet is like finding a needle in haystack. shop4moto.com brings you the authentic gears only suggested by best motovloggers around the world. ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='main.css') }}">
+    <script src="{{url_for('static', filename='main.js')}}"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141530456-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-141530456-1');
+    </script>
+  </head>
+  <body style="background-color: #001313">
+    <div class="container">
+      <header class="box hero is-success">
+        <!--         <img src="{{url_for('static', filename='shop4moto-com-header.png')}}" alt=""> -->
+        <h1 class="is-size-3 has-text-white-bis has-text-weight-bold">Counterfeit motorcycle riding gears are cheap but dangerous</h1>
+        <h1 class="is-size-5 has-text-white-bis has-text-weight-semibold">Buy authentic motorcycle riding gears</h1>
+        <p class="is-size-6 has-text-white-bis">Counterfeit motorcycle riding gears can hurt riders very, very seriously. A counterfeit helmet can cause serious skeleton injury, brain damage, or death. Finding authentic gears on the Internet is like finding a needle in haystack. shop4moto.com brings you the authentic gears only suggested by best motovloggers around the world.
+        </p>
+        <h1 class="is-size-5 has-text-white-bis has-text-weight-semibold">
+        All the motorcycle gears and accessories here are recommended by motovloggers, and are absolute MUST HAVES.
+        </h1>
+      </header>
+      <div class="box">
+        <section>
+          {% for obj in object_list %}
+            <article><h1 class="cat">{{ obj.gear_cat }}</h1><span class="product"><a href="{{ obj.gear_cta }}">{{ obj.gear_name }}</a></span><figure>{{ obj.gear_img | safe }}</figure></article>
+          {% endfor %}
+        </section>
+      </div>
+  </div>
+  <footer>
+    <div class="container has-text-centered">
+      <small>&copy; 2019 shop4moto.com All rights reserved</small>
+    </div>
+  </footer>
+</body>
+</html>
