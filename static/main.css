@@ -11,13 +11,20 @@ article {
 }
 
 a {
-  color: #00008b;
+
   text-decoration: none;
 }
 
 
+div > div> a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0a0a0a;
+
+}
+
 div {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 span {
@@ -47,15 +54,22 @@ nav>ul>li {
 }
 
 .bar a {
-  color: #2f4f4f;
+  color: #00008b;
   font-weight: bold;
 }
 
 h1 {
-  color: #3ecf8e;
+  color: #00008b;
   padding-bottom: 1.5rem;
+  font-weight: bold;
 }
 
 .page-footer {
   background: #f0fff0;
+}
+
+.main-nav > li > a {
+
+  font-size: 1.5rem;
+  font-weight: bold;
 }
