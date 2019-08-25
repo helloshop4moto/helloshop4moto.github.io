@@ -1,3 +1,6 @@
+body {
+  background-color: red;
+}
 section {
   display: flex;
   flex-wrap: wrap;
@@ -7,8 +10,12 @@ article {
   padding: 10px;
   margin: 2px;
   flex: 300px;
-  background: #fffafa;
 }
+
+
+.title {
+    color: yellow;
+  }
 
 a {
 
@@ -19,8 +26,13 @@ a {
 div > div> a {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #0a0a0a;
+  color: white;
 
+}
+
+div.page-footer.container.has-text-centered {
+
+  background-color: red;
 }
 
 div {
